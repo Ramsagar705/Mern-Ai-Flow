@@ -18,11 +18,11 @@ export const askAI = async (req, res) => {
       return res.status(400).json({ error: "Prompt is required" });
     }
 
-    // 🧪 STEP 2: QUICK TEST MODE (uncomment to test)
+    // // 🧪 STEP 2: QUICK TEST MODE (uncomment to test)
   
-    return res.json({
-      answer: "Test working ✅"
-    });
+    // return res.json({
+    //   answer: "Test working ✅"
+    // });
   
 
     // ✅ STEP 3: API KEY CHECK
