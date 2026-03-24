@@ -38,7 +38,7 @@ const Flow = () => {
   const runFlow = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/api/ask-ai", { prompt });
+      const res = await axios.post("https://mern-ai-flow-2.onrender.com/api/ask-ai", { prompt });
       setResult(res.data.answer);
     } catch (err) {
       alert("AI error");
@@ -49,7 +49,7 @@ const Flow = () => {
 
   const saveData = async () => {
     try {
-      await axios.post("http://localhost:5000/api/save", {
+      await axios.post("https://mern-ai-flow-2.onrender.com/api/save", {
         prompt,
         response: result,
       });
